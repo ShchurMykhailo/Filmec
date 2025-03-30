@@ -175,3 +175,53 @@ button:hover {
         font-size: 12px;
     }
 }
+.films div:hover {
+    transform: scale(1.05);
+}
+.swich{
+    width: auto 0%;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    
+    font-size: 24px;
+}
+.swich .one{
+    background-color: #000000;
+
+    padding: 15px;
+}
+.two{
+    padding: 15px;
+}
+.line{
+    border-bottom: 10px solid #bc4b1f;
+}
+.textik {
+    width: auto 0%;
+    display: flex;
+    justify-content: left;
+    flex-direction:column;
+    background-color: #1c1c1c;
+    color: white;
+}
+.textik h {
+    color: #bc4b1f;
+    padding: 10px;
+
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 39px;
+
+}
+.textik p {
+    padding: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
