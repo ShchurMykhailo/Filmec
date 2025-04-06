@@ -34,7 +34,18 @@ header img:first-child {
     align-items: center;
     flex-grow: 1;
 }
+.films div {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.films div:hover {
+    transform: scale(1.05); /* Збільшуємо фільм на 5% */
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6); /* Світла тінь */
+}
+.films div:hover .HD, .name {
+
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6); /* Світла тінь */
+}
 
 .film {
     display: flex;
@@ -115,26 +126,26 @@ button:hover {
 .films {
     display: flex;
     justify-content: center;
-
     gap: 17px;
     flex-wrap: wrap;
     padding: 20px;
-    background-color: #222;
+    background-color: #1c1c1c;
+
 }
 
 .films div {
-
-    position: relative;
     width: 180px;
-
     overflow: hidden;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static; /* Тепер не потрібно relative */
 }
 
 .films img {
     width: 100%;
     display: block;
-
     z-index: 1;
 }
 
@@ -148,20 +159,19 @@ button:hover {
     margin-top: 0px;
     background: rgba(0, 0, 0, 0.7);
     height: 30px;
-    
+    width: 100%;
 }
 
 .HD {
-    position: absolute;
-    top: -270px;
-    right: -60px;
+    margin-top: -0px; /* Замість absolute – використовуємо відступ */
     background: rgba(0, 0, 0, 0.7);
     color: white;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: bold;
     z-index: 2;
-    border-radius: 5px;
-        
+    border-radius: 0px;
+    padding: 3px 8px;
+    height: 14px;
 }
 
 @media (max-width: 768px) {
@@ -175,24 +185,27 @@ button:hover {
         font-size: 12px;
     }
 }
-.films div:hover {
+
+.films div:hover .HD, .name{
     transform: scale(1.05);
 }
+
 .swich{
     width: auto 0%;
     background-color: #222;
     display: flex;
     justify-content: center;
-    
+
     font-size: 24px;
 }
 .swich .one{
     background-color: #000000;
-
+    border-radius: 3px;
     padding: 15px;
 }
 .two{
     padding: 15px;
+    border-radius: 3px;
 }
 .line{
     border-bottom: 10px solid #bc4b1f;
@@ -224,4 +237,20 @@ button:hover {
     display: flex;
     align-items: center;
     color: #ffffff;
+}
+.footer{
+    
+    background-color: rgba(32, 32, 32, 0.8);
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+
+}
+.footer h, p{
+    color: white;
+
+}
+.footer h{
+    font-size: 32px;
+    font-weight: 00;
 }
