@@ -78,13 +78,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // Початкове завантаження
     updateFilms(filmsSet1, "one");
 });
-// Очікуємо, поки весь HTML завантажиться
 document.addEventListener('DOMContentLoaded', function () {
-    const filmBlock = document.querySelector('.film.img');
-
-    if (filmBlock) {
-        filmBlock.addEventListener('click', function () {
+    const filmImages = document.querySelectorAll('.film img');
+    filmImages.forEach(function (image) {
+        image.addEventListener('click', function () {
             window.location.href = 'page2.html';
         });
-    }
+    });
 });
