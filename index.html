@@ -7,6 +7,7 @@
     <title>Filmec</title>
     <link rel="stylesheet" href="style.css">
     <script src="js.js"></script>
+    
 
 </head>
 
@@ -14,7 +15,7 @@
     <header>
         <img src="img/icon.png">
         <div class="elements">
-            <div class="film">
+            <div class="film1">
                 <button>ФІЛЬМИ</button>
                 <button>СЕРІАЛИ</button>
                 <button>МУЛЬТФІЛЬМИ</button>
@@ -33,7 +34,7 @@
         </div>
         <div class="films">
 
-            <div >
+            <div class="film">
                 <img src="img/termin.png">
                 <div class="name">
                     <p>Термінатор</p>
@@ -42,7 +43,7 @@
                     <p>HD 720p</p>
                 </div>
             </div>
-            <div >
+            <div class="film">
                 <img src="img/islend.png">
                 <div class="name">
                     <p>Острів проклятих</p>
@@ -51,7 +52,7 @@
                     <p>1080p</p>
                 </div>
             </div>
-            <div >
+            <div  class="film">
                 <img src="img/pockalza.png">
                 <div class="name">
                     <p>Ручна поклажа</p>
@@ -60,7 +61,7 @@
                     <p>1080p</p>
                 </div>
             </div>
-            <div >
+            <div  class="film">
                 <img src="img/tropik.png">
                 <div class="name">
                     <p>Грім у торпіках</p>
@@ -69,7 +70,7 @@
                     <p>1080p</p>
                 </div>
             </div>
-            <div>
+            <div class="film">
                 <img src="img/black.png">
                 <div class="name">
                     <p>Люди в чорному</p>
@@ -79,7 +80,7 @@
                 </div>
             </div>
 
-            <div >
+            <div  class="film">
                 <img src="img/8.png">
                 <div class="name">
                     <p>Безславні виродки</p>
@@ -88,7 +89,7 @@
                     <p>1080p</p>
                 </div>
             </div>
-            <div >
+            <div  class="film">
                 <img src="img/jango.png">
                 <div class="name">
                     <p>Джанго вільний</p>
@@ -97,7 +98,7 @@
                     <p>1080p</p>
                 </div>
             </div>
-            <div >
+            <div  class="film">
                 <img src="img/7.png">
                 <div class="name">
                     <p>Мерзенна вісімка</p>
@@ -106,7 +107,7 @@
                     <p>1080p</p>
                 </div>
             </div>
-            <div>
+            <div class="film">
                 <img src="img/knife.png">
                 <div class="name">
                     <p>Ножі наголо</p>
@@ -115,7 +116,7 @@
                     <p>1080p</p>
                 </div>
             </div>
-            <div>
+            <div class="film">
                 <img src="img/avatar.png">
                 <div class="name">
                     <p>Аватар</p>
@@ -125,7 +126,7 @@
                 </div>
             </div>
 
-            <div>
+            <div class="film">
                 <img src="img/odnok.png">
                 <div class="name">
                     <p>Однокласники</p>
@@ -134,7 +135,7 @@
                     <p>1080p</p>
                 </div>
             </div>
-            <div>
+            <div class="film">
                 <img src="img/interstelar.png">
                 <div class="name">
                     <p>Інтерстеллар</p>
@@ -143,7 +144,7 @@
                     <p>1080p</p>
                 </div>
             </div>
-            <div>
+            <div class="film">
                 <img src="img/jumangi.png">
                 <div class="name">
                     <p>Джуманджі</p>
@@ -152,7 +153,7 @@
                     <p>1080p</p>
                 </div>
             </div>
-            <div>
+            <div class="film">
                 <img src="img/volf.png">
                 <div class="name">
                     <p>Вовк з Волл Стріт</p>
@@ -161,7 +162,7 @@
                     <p>1080p</p>
                 </div>
             </div>
-            <div>
+            <div class="film">
                 <img src="img/mask.png">
                 <div class="name">
                     <p>Маска</p>
@@ -172,7 +173,20 @@
             </div>
 
 
+
         </div>
+        <script>
+            // Після повного завантаження DOM
+            document.addEventListener('DOMContentLoaded', function () {
+              const filmBlocks = document.querySelectorAll('.film');
+        
+              filmBlocks.forEach(film => {
+                film.addEventListener('click', () => {
+                  window.location.href = 'page2.html';
+                });
+              });
+            });
+          </script>
         <div class="swich">
             <button class="one">1</button>
             <button class="two">2</button>
@@ -198,6 +212,8 @@
         </div>
 
     </footer>
+    <script src="script.js"></script>
+
 </body>
 
 </html>

@@ -28,7 +28,7 @@ header img:first-child {
     flex-grow: 1;
     margin: 0 20px;
 }
-.film {
+.film1 {
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -47,7 +47,7 @@ header img:first-child {
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6); /* Світла тінь */
 }
 
-.film {
+.film1 {
     display: flex;
     gap: 40px;
 }
