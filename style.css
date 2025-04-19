@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 /* Заголовок */
 header {
     display: flex;
@@ -29,30 +28,23 @@ header img:first-child {
     flex-grow: 1;
     margin: 0 20px;
 }
-
 .film1 {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     flex-grow: 1;
 }
-
 .films div {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .films div:hover {
-    transform: scale(1.05);
-    /* Збільшуємо фільм на 5% */
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
-    /* Світла тінь */
+    transform: scale(1.05); /* Збільшуємо фільм на 5% */
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6); /* Світла тінь */
 }
+.films div:hover .HD, .name {
 
-.films div:hover .HD,
-.name {
-
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
-    /* Світла тінь */
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6); /* Світла тінь */
 }
 
 .film1 {
@@ -116,24 +108,21 @@ button:hover {
         gap: 10px;
     }
 }
-
 .text {
     background-color: rgba(32, 32, 32, 0.8);
     width: auto 0%;
 }
-
-.text h {
+.text h{
     display: flex;
     height: 50px;
     justify-content: center;
     padding: 15px;
     font-size: 20px;
-    font-weight: normal;
+    font-weight:normal;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-align: center;
 }
-
 .films {
     display: flex;
     justify-content: center;
@@ -151,8 +140,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: static;
-    /* Тепер не потрібно relative */
+    position: static; /* Тепер не потрібно relative */
 }
 
 .films img {
@@ -175,8 +163,7 @@ button:hover {
 }
 
 .HD {
-    margin-top: -0px;
-    /* Замість absolute – використовуємо відступ */
+    margin-top: -0px; /* Замість absolute – використовуємо відступ */
     background: rgba(0, 0, 0, 0.7);
     color: white;
     font-size: 10px;
@@ -191,22 +178,19 @@ button:hover {
     .films {
         justify-content: space-around;
     }
-
     .films div {
         width: 140px;
     }
-
     .name {
         font-size: 12px;
     }
 }
 
-.films div:hover .HD,
-.name {
+.films div:hover .HD, .name{
     transform: scale(1.05);
 }
 
-.swich {
+.swich{
     width: auto 0%;
     background-color: #222;
     display: flex;
@@ -214,31 +198,26 @@ button:hover {
 
     font-size: 24px;
 }
-
-.swich .one {
+.swich .one{
     background-color: #000000;
     border-radius: 3px;
     padding: 15px;
 }
-
-.two {
+.two{
     padding: 15px;
     border-radius: 3px;
 }
-
-.line {
+.line{
     border-bottom: 10px solid #bc4b1f;
 }
-
 .textik {
     width: auto 0%;
     display: flex;
     justify-content: left;
-    flex-direction: column;
+    flex-direction:column;
     background-color: #1c1c1c;
     color: white;
 }
-
 .textik h {
     color: #bc4b1f;
     padding: 10px;
@@ -249,7 +228,6 @@ button:hover {
     line-height: 39px;
 
 }
-
 .textik p {
     padding: 10px;
     font-style: normal;
@@ -260,89 +238,20 @@ button:hover {
     align-items: center;
     color: #ffffff;
 }
-
-.footer {
-
+.footer{
+    
     background-color: rgba(32, 32, 32, 0.8);
     display: flex;
     flex-direction: row;
     align-items: end;
 
 }
-
-.footer h,
-p {
+.footer h, p{
     color: white;
 
 }
-
-.footer h {
+.footer h{
     font-size: 32px;
     font-weight: 00;
 }
 
-
-
-    /* МОДАЛКА */
-    .trailer-modal {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw;
-      height: 100vh;
-      display: none;
-      justify-content: center;
-      align-items: center;
-      background-color: rgba(0, 0, 0, 0.9);
-      z-index: 9999;
-      padding: 20px;
-    }
-
-    .trailer-content {
-      position: relative;
-      width: 90vw;
-      max-width: 960px;
-      height: 70vh;
-      border-radius: 12px;
-      overflow: hidden;
-      background: #000;
-    }
-
-    .trailer-content iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-
-    .close-trailer {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: red;
-      color: white;
-      border: none;
-      font-size: 24px;
-      border-radius: 50%;
-      width: 36px;
-      height: 36px;
-      cursor: pointer;
-      z-index: 10000;
-    }
-    .films {
-        display: flex;
-        justify-content: center;
-        gap: 17px;
-        flex-wrap: wrap;
-        padding: 20px;
-        background-color: #1c1c1c;
-    }
-    
-    .film {
-        width: 180px;
-        overflow: hidden;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        cursor: pointer;
-    }
-    
