@@ -44,7 +44,7 @@ button {
     background: none;
     border: none;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     cursor: pointer;
 }
@@ -112,7 +112,7 @@ button:hover {
 
     font-style: normal;
     font-weight: 900;
-    font-size: 32px;
+    font-size: 25px;
     line-height: 39px;
 
 }
@@ -120,7 +120,7 @@ button:hover {
     padding: 10px;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 19px;
     display: flex;
     align-items: center;
